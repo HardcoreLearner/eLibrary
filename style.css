@@ -1,0 +1,128 @@
+body {
+    background-color: #612f13;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: #fff;
+    font-size: 5rem;
+    background-color: #ae5b2b;
+    width: fit-content;
+    align-self: center;
+}
+
+.library {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    background-color: #ae5b2b;
+    padding: 16px;
+    
+}
+
+.bookCard {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.title {
+    align-self: center;
+    justify-self: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.author, .pages {
+    align-self: flex-end;
+    margin-right: 13px;
+}
+
+.read {
+    border-left: 10px solid green;
+}
+
+.unread {
+    border-left: 10px solid red;
+}
+
+.action img {
+    margin-left: 10px;
+    width: 30px;
+}
+
+.del {
+    filter: invert(20%) sepia(95%) saturate(4860%) hue-rotate(354deg) brightness(98%) contrast(128%);
+}
+
+.isRead {
+    filter: invert(21%) sepia(99%) saturate(3943%) hue-rotate(114deg) brightness(93%) contrast(105%);
+}
+
+.del, .isRead {
+    cursor: pointer;
+}
+
+.new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    width: 150px;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #2baea7;
+    border: 0;
+    font-size: 20px;
+}
+
+form {
+    visibility: hidden;
+    width: 300px;
+    margin-top: 20px;
+    color: black;
+    background-color: #ae5b2b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+form > input {
+    width: 80%;
+}
+
+.question {
+    background-color: #fff;
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    padding: 2px;
+}
+
+#submit {
+    margin-top: 20px;
+    width: 150px;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #2baea7;
+    border: 0;
+    font-size: 20px;
+}
